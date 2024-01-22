@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "micro-videos-admin",
   "version": "1.0.0",
   "description": "Project in node to create a base project to a streaming platform",
   "main": "index.js",
