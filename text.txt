@@ -1,0 +1,13 @@
+
+
+Entidade -> Algo que queremos manipular
+
+
+Purista - Entidades ficam mais livres possível de libs e frameworks
+    Manter o software estável durante os Updates de libs
+MIX - Entidades misturadas com ORM (ricas)
+
+sequilize, TypeOrm, primas
+
+
+Anemica - ORM

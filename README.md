@@ -9,8 +9,7 @@ Project in node to create a base project to a streaming platform
 - Add dev_container to the project with the plugins (ZSH Pluglins, Common Utilities, Shell History)
 - Add some configuration base on the class (Projeto prático com NestJs Integrando com Dev-container)
 
-# 2 - Start to config in fact the project
-
+# 2 - Config github inside dev-container
 - Add public key of github - ssh-keygen -t rsa -b 4096 -C "gustavomedeiros15@outlook.com.br"
 - eval "$(ssh-agent -s)"
 - ssh-add ~/.ssh/id_rsa
@@ -23,3 +22,13 @@ Project in node to create a base project to a streaming platform
 
 
 - npm init -y
+
+#  Start to config in fact the project
+
+- __npm install typescript -D__
+- __npx tsc --init__ -> start typescript project
+- __npm install ts-node --save-dev__
+
+- __npm install jest @types/jest -__
+- __npm install @swc/core @swc/cli @swc/jest -D__ // Rust compiler to better run
+- __npx jest --init__
