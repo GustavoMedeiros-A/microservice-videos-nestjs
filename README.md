@@ -23,7 +23,7 @@ Project in node to create a base project to a streaming platform
 
 - npm init -y
 
-#  Start to config in fact the project
+# 3 -  Start to config in fact the project
 
 - __npm install typescript -D__
 - __npx tsc --init__ -> start typescript project
@@ -32,3 +32,6 @@ Project in node to create a base project to a streaming platform
 - __npm install jest @types/jest -__
 - __npm install @swc/core @swc/cli @swc/jest -D__ // Rust compiler to better run
 - __npx jest --init__
+
+# 4 - To run testes and make some testes
+- **npm run test -- --watchAll**
