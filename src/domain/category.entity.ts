@@ -7,13 +7,14 @@ export type CategoryConstructorProps = {
 };
 
 export type CategoryCreateCommand = {
+  cpf: string;
   name: string;
   description?: string | null;
   is_active?: boolean;
 };
 
 export class Category {
-  category_id: string;
+  category_id?: string;
   name: string;
   description: string | null;
   is_active: boolean;
@@ -28,7 +29,7 @@ export class Category {
   }
 
   //Factory
-  static create(props: CategoryConstructorProps): Category {
+  static create(props: CategoryCreateCommand): Category {
     return new Category(props);
   }
 
@@ -47,6 +48,14 @@ export class Category {
   deactivate() {
     this.is_active = false;
   }
-}
 
-// Projeto é o codigo e o código é o projeto
+  toJSON() {
+    return {
+      category_id: this.category_id,
+      name: this.name,
+      description: this.description,
+      is_active: this.is_active,
+      created_at: this.created_at,
+    };
+  }
+}
