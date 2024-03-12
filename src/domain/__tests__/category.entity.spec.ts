@@ -35,6 +35,7 @@ describe("Category unit tests", () => {
     test("should create category", () => {
       const category = Category.create({
         name: "Movie",
+        cpf: "",
       });
       expect(category.category_id).toBeUndefined();
       expect(category.name).toBe("Movie");
@@ -64,6 +65,7 @@ describe("Category unit tests", () => {
       const category = Category.create({
         name: "Movie",
         is_active: false,
+        cpf: "",
       });
       category.activate();
       expect(category.is_active).toBe(true);
@@ -73,6 +75,7 @@ describe("Category unit tests", () => {
       const category = Category.create({
         name: "Movie",
         is_active: true,
+        cpf: "",
       });
       category.deactivate();
       expect(category.is_active).toBe(false);
