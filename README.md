@@ -39,3 +39,5 @@ Project in node to create a base project to a streaming platform
 # 4 - To run testes and make some testes
 
 - **npm run test -- --watchAll**
+
+# 5 - You can use YARN as Node PackageManager, and is that that i'm doing now because i think that is better that NPM

@@ -13,7 +13,7 @@ export type CategoryCreateCommand = {
 };
 
 export class Category {
-  category_id: string;
+  category_id?: string;
   name: string;
   description: string | null;
   is_active: boolean;
@@ -48,5 +48,3 @@ export class Category {
     this.is_active = false;
   }
 }
-
-// Projeto é o codigo e o código é o projeto
