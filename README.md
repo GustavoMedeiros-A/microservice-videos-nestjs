@@ -46,3 +46,10 @@ Project in node to create a base project to a streaming platform
 - **npm install @types/lodash** -> Array and Object
 
 # 6 - You can use YARN as Node PackageManager, and is that that i'm doing now because i think that is better that NPM
+
+# 7 - Validator to validate
+
+- **yarn add class-validator**
+
+- Enable decorators behavior in tsConfig.json- _"experimentalDecorators": true, Enable experimental support for legacy experimental decorators._
+- Strict check as null - _"strictNullChecks": false, When type checking, take into account 'null' and 'undefined'._
