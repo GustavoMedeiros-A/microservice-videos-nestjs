@@ -1,7 +1,6 @@
 // vo -> Value Object
 
 import { ValueObject } from "../value-object";
-import crypto from "crypto";
 import { v4 as uuidv4, validate as uuidValidate } from "uuid";
 
 export class Uuid extends ValueObject {
@@ -17,6 +16,12 @@ export class Uuid extends ValueObject {
     if (!isValid) {
       throw new InvalidUuidError();
     }
+  }
+
+  // trying
+  static createUuid() {
+    const uuid = uuidv4();
+    return uuid;
   }
 }
 
