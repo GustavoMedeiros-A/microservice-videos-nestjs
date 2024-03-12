@@ -44,3 +44,5 @@ Project in node to create a base project to a streaming platform
 
 - **npm install lodash --save** -> Array and Object
 - **npm install @types/lodash** -> Array and Object
+
+# 6 - You can use YARN as Node PackageManager, and is that that i'm doing now because i think that is better that NPM
